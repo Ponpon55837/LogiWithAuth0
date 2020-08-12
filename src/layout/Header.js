@@ -21,7 +21,7 @@ const Header = () => {
           <LoginButton />
           <LogoutButton />
         </Nav>
-        <Nav className="float-right">
+        <Nav className="ml-2">
           <Profile />
         </Nav>
       </Navbar.Collapse>
