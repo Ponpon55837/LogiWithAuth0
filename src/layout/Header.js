@@ -7,7 +7,7 @@ import { useAuth0 } from '@auth0/auth0-react'
 import { Navbar, Nav, Spinner } from 'react-bootstrap'
 
 const Header = () => {
-  const { isLoading } = useAuth0()
+  const { isAuthenticated, isLoading } = useAuth0()
 
   return (
     <Navbar bg="primary" variant="dark" collapseOnSelect expand="lg">
@@ -15,7 +15,11 @@ const Header = () => {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-2">
-          {isLoading ? <Spinner animation="grow" variant="info" /> : ''}
+          {
+            isAuthenticated ?
+            (isLoading && <Spinner animation="grow" variant="info" />)
+            : ''
+          }
         </Nav>
         <Nav className="mr-2">
           <LoginButton />
