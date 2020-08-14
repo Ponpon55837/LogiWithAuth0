@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import { useAuth0 } from '@auth0/auth0-react'
 import { Container, Row, Col } from 'react-bootstrap'
+import NotLogInPage from './ContentComponent/NotLogInPage'
 
 
 const App = () => {
@@ -16,13 +17,7 @@ const App = () => {
         </Col>
       </Row>
     </Container>) :
-    (<Container>
-      <Row>
-        <Col>
-          Please Log In
-        </Col>
-      </Row>
-    </Container>)
+    <NotLogInPage />
   )
 }
 

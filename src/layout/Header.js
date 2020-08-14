@@ -1,8 +1,8 @@
 import React from 'react'
 import '../style/header.css'
-import LoginButton from '../components/LoginButton'
-import LogoutButton from '../components/LogoutButton'
-import Profile from '../components/Profile'
+import LoginButton from '../LayoutComponents/LoginButton'
+import LogoutButton from '../LayoutComponents/LogoutButton'
+import Profile from '../LayoutComponents/Profile'
 import { useAuth0 } from '@auth0/auth0-react'
 import { Navbar, Nav, Spinner } from 'react-bootstrap'
 
