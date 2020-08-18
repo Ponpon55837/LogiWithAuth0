@@ -10,7 +10,7 @@ const Header = () => {
   const { isAuthenticated, isLoading } = useAuth0()
 
   return (
-    <Navbar bg="primary" variant="dark" collapseOnSelect expand="lg">
+    <Navbar variant="dark" collapseOnSelect expand="lg">
       <Navbar.Brand>React with Auth0</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">

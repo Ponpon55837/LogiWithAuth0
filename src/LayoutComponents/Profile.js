@@ -9,13 +9,7 @@ const Profile = () => {
   return (
     isAuthenticated && (
       <div>
-        <Image
-          style={{ width: '40px', height: '40px' }}
-          roundedCircle
-          src={user.picture}
-          title={user.given_name}
-          alt={`photo by` + user.name} />
-          {  console.log(<JSONPretty data={user} />) }
+        {user.name}
       </div>
     )
   )
@@ -24,3 +18,11 @@ const Profile = () => {
 export default Profile
 
  // { JSON.stringify(user, null, 2) }
+
+ // <Image
+ //   style={{ width: '40px', height: '40px' }}
+ //   roundedCircle
+ //   src={user.picture}
+ //   title={user.given_name}
+ //   alt={`photo by` + user.name} />
+ //   {  console.log(<JSONPretty data={user} />) }

@@ -1,0 +1,52 @@
+body {
+  margin:0;
+  font-family: sans-serif;
+  background: #222;
+  /* color: #ddd; */
+  text-align: center;
+}
+
+.App {
+  width:  960px;
+  margin: 0 auto;
+}
+
+.content {
+  text-align: left;
+}
+
+h1 {
+  color: #ffff57;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+
+h2 {
+  color: #ddd;
+}
+
+Button {
+  margin: 0 10px;
+  background: transparent;
+  border: 3px solid #ccc;
+  border-radius: 20px;
+  padding: 10px;
+  color: #ccc;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.page-link {
+  background-color: #1b1b1b;
+  color: #fff;
+}
+
+footer {
+  color: #fff;
+  font-size: 1rem;
+}
